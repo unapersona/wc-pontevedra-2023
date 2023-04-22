@@ -24,7 +24,7 @@ gulp.task( 'public-scss', function() {
 		.pipe( sourcemaps.write( './maps' ) )
 		.pipe( gulp.dest( './' ) )
 		.on( 'end', function() {
-			log.info( 'Result Gulp Task CSS: Created: ./wc-ponte.css' );
+			log.info( 'Result Gulp Task CSS: Created: ./style.css' );
 		} );
 } );
 
