@@ -1,5 +1,12 @@
-.btn-comprar {
-    text-transform: uppercase;
-    background-color: $color_fondo_lila;
-    border-radius: 5px;
+.menu-principal {
+
+    color: $color_azul;
+
+    .btn-comprar {
+        text-transform: uppercase;
+        background-color: $color_fondo_lila;
+        color: $color_pure-white;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
 }
