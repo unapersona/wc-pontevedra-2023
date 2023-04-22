@@ -1,0 +1,172 @@
+// Font definition.
+@mixin fonts-defs( $family, $src, $style: 'normal', $weight: '100 900' ) {
+	@font-face {
+		font-family: $family;
+		font-style: unquote( $style );
+		font-weight: unquote( $weight );
+		font-display: swap;
+		src: url( $src + '.woff2' ) format( 'woff2' );
+	}
+}
+
+// Fluid font size
+@function strip-unit( $value ) {
+	@return $value / ( $value * 0 + 1 );
+}
+
+@mixin fluid-type( $min-vw, $max-vw, $min-font-size, $max-font-size ) {
+	$u1: unit( $min-vw );
+	$u2: unit( $max-vw );
+	$u3: unit( $min-font-size );
+	$u4: unit( $max-font-size );
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			font-size: $min-font-size;
+			@media screen and ( min-width: $min-vw ) {
+				font-size: calc(#{$min-font-size} + #{strip-unit( $max-font-size - $min-font-size )} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+			}
+			@media screen and ( min-width: $max-vw ) {
+				font-size: $max-font-size;
+			}
+		}
+	}
+}
+
+@function rem( $pixels, $context: $font_size_root ) {
+	@if ( unitless( $pixels ) ) {
+		$pixels: $pixels * 1px;
+	}
+
+	@if ( unitless( $context ) ) {
+		$context: $context * 1px;
+	}
+
+	@return ( $pixels / $context ) * 1rem;
+}
+
+@function width-slider( $n_columns ) {
+	@return ( ( $container_width - ( ( $n_columns - 1 ) * 32 ) - 10 ) / $n_columns ) * 1px;
+}
+
+//@function width-slider-mobile( $n_columns ) {
+//	@return ( ( $container_width_mobile - ( ( $n_columns - 1 ) * 32 ) - 10 ) / $n_columns ) * 1px;
+//}
+
+@mixin stars() {
+	color: $color_pantone-2728-c;
+	//letter-spacing: 3px;
+}
+
+@mixin max-chars( $n-chars ) {
+	.cl-max-#{$n-chars}-chars {
+		max-width: #{$n-chars}ch;
+
+		&.has-text-align-center,
+		&.cl-text-align-center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+@mixin details( $number, $color ) {
+	.cl-details-#{$number} {
+		details {
+			padding: 1rem;
+			margin-bottom: 1rem;
+
+			&[open] {
+				background-color: $color_pure-white;
+
+				summary {
+					list-style: none;
+					margin: 0;
+					background: url( $theme_path + '/images/svg/details/minus-circle-#{$number}-min.svg' ) no-repeat left top;
+					padding-left: 2.5rem;
+					color: $color;
+
+					&::-webkit-details-marker {
+						display:none;
+					}
+
+					&::marker {
+						display:none;
+					}
+				}
+			}
+
+			summary {
+				list-style: none;
+				margin: 0;
+				font-size: 1.2rem;
+				font-weight: 600;
+				cursor: pointer;
+				background: url( $theme_path + '/images/svg/details/plus-circle-#{$number}-min.svg' ) no-repeat left top;
+				padding-left: 2.5rem;
+
+				&::-webkit-details-marker {
+					display:none;
+				}
+
+				&::marker {
+					display:none;
+				}
+			}
+
+			p {
+				margin-left: 2.5rem;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+// Based on https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+@mixin for-phone-only {
+	@media ( max-width: 599px ) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+	@media ( min-width: 600px ) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+	@media ( min-width: 900px ) { @content; }
+}
+
+@mixin for-desktop-up {
+	@media ( min-width: 1200px ) { @content; }
+}
+
+@mixin for-big-desktop-up {
+	@media ( min-width: 1600px ) { @content; }
+}
+
+@mixin for-mobile-up {
+	@media ( min-width: 1024px ) { @content; }
+}
+
+@mixin for-mobile {
+	@media ( max-width: 1024px ) { @content; }
+}
+
+@mixin for-mobile-mini {
+	@media ( max-width: 400px ) { @content; }
+}
+
+@mixin for-mobile-big {
+	@media ( max-width: 900px ) { @content; }
+}
+
+// GeneratePress compatible sizes.
+@mixin for-mobile-gp {
+	@media ( max-width: 767px ) { @content; }
+}
+
+@mixin for-tablet-gp {
+	@media ( min-width: 768px ) and ( max-width: 1024px ) { @content; }
+}
