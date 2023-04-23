@@ -26,5 +26,14 @@
 		background-size: cover;
 	}
 
+	@include for-phone-only{
+		.contenido{
+			padding: 0 15px;
+			h1{
+				font-size: 50px;
+			}
+		}
+	}
+
 
 }
