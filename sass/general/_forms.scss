@@ -85,6 +85,10 @@
 			.tix-row-health-advisory {
 				.tix-left {
 					text-align: left;
+
+					p {
+						margin-bottom: 1em;
+					}
 				}
 
 				.tix-left::after {
@@ -97,9 +101,16 @@
 	.camptix-invoice-toggle-wrapper {
 		display: block;
 		margin-top: 2rem;
+		margin-bottom: 2rem;
 
 		label {
 			font-weight: bold;
+		}
+
+		table {
+			label {
+				font-weight: normal;
+			}
 		}
 
 		.camptix-invoice-details {
@@ -133,6 +144,11 @@
 		}
 	}
 
+	.tix-submit {
+		display: block;
+		margin-bottom: 3em;
+	}
+
 	input[type='submit'] {
 		margin-top: 2rem;
 		@include boton();
@@ -147,6 +163,9 @@
 		margin-bottom: 2rem;
 	}
 
+	.tix-payment-method .tix-payment-tab {
+		border-color: $color_fondo_lila;
+	}
 
 }
 
