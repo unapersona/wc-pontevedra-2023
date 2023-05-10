@@ -1,3 +1,4 @@
+// Comprar entradas
 .tix-js {
 	font-size: 1.1em;
 
@@ -45,5 +46,17 @@
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+}
+
+// Formulario ludoteca
+
+.contact-form {
+	button {
+		@include boton();
+	}
+
+	&:hover {
+		text-decoration: underline;
 	}
 }
