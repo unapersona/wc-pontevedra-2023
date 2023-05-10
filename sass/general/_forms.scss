@@ -167,6 +167,12 @@
 		border-color: $color_fondo_lila;
 	}
 
+	.tix-payment-method-container {
+		fieldset {
+			border: 1px solid $color_fondo_lila;
+		}
+	}
+
 }
 
 // Formulario ludoteca
