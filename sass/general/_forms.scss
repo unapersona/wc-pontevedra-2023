@@ -1,5 +1,9 @@
 .tix-js {
 	.tix_tickets_table {
+		th {
+			padding: 5px 20px;
+		}
+
 		thead {
 			th {
 				background-color: $color_fondo_lila;
@@ -11,6 +15,10 @@
 		tbody {
 			.tix-ticket-title {
 				font-weight: bold;
+			}
+
+			th {
+				border: 1px solid $color_gris_casi_blanco;
 			}
 		}
 	}

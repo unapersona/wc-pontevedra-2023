@@ -71,9 +71,11 @@
 }
 
 @mixin boton() {
-	border-radius: 40px;
+	border-radius: 25px;
 	border: none;
+	padding: 10px 20px;
 	background-color: $color_fondo_lila;
+	color: $color_pure-white;
 	text-transform: uppercase;
 }
 
