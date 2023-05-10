@@ -64,7 +64,26 @@
 				text-align: left;
 				padding-left: 1em;
 			}
+
+			.tix-left,
+			.tix-right {
+				padding-top: 1.5em;
+				vertical-align: bottom;
+			}
+
+			.tix-row-health-advisory {
+				text-align: left;
+
+				.tix-left::after {
+					content: none;
+				}
+			}
 		}
+	}
+
+	.camptix-invoice-toggle-wrapper {
+		display: block;
+		margin-top: 2rem;
 	}
 
 	input[type='submit'] {
@@ -75,6 +94,13 @@
 			text-decoration: underline;
 		}
 	}
+
+	#tix-registration-information {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+
 }
 
 // Formulario ludoteca
