@@ -45,7 +45,7 @@
 
 			.tix-row-total {
 				td:last-child {
-					border-top: 1px solid $color_pure-black;
+					border-top: 1px solid $color_gris_casi_blanco;
 				}
 			}
 		}
@@ -83,7 +83,9 @@
 			}
 
 			.tix-row-health-advisory {
-				text-align: left;
+				.tix-left {
+					text-align: left;
+				}
 
 				.tix-left::after {
 					content: none;
@@ -95,6 +97,40 @@
 	.camptix-invoice-toggle-wrapper {
 		display: block;
 		margin-top: 2rem;
+
+		label {
+			font-weight: bold;
+		}
+
+		.camptix-invoice-details {
+			width: 100%;
+			margin-bottom: 2em;
+
+			td {
+				border: none;
+			}
+
+			.tix-left {
+				text-align: right;
+				padding-right: 0.5em;
+
+				&:after {
+					content: ':';
+				}
+			}
+
+			.tix-right {
+				text-align: left;
+				padding-left: 0.5em;
+			}
+
+			.tix-left,
+			.tix-right {
+				padding-top: 1.5em;
+				vertical-align: bottom;
+			}
+
+		}
 	}
 
 	input[type='submit'] {
