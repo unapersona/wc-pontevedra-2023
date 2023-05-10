@@ -1,0 +1,21 @@
+.tix-js {
+	.tix_tickets_table {
+		thead {
+			th {
+				background-color: $color_fondo_lila;
+				font-weight: bold;
+				color: $color_pure-white;
+			}
+		}
+
+		tbody {
+			.tix-ticket-title {
+				font-weight: bold;
+			}
+		}
+	}
+
+	input[type='submit'] {
+		@include boton();
+	}
+}

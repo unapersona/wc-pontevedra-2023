@@ -70,59 +70,11 @@
 	}
 }
 
-@mixin details( $number, $color ) {
-	.cl-details-#{$number} {
-		details {
-			padding: 1rem;
-			margin-bottom: 1rem;
-
-			&[open] {
-				background-color: $color_pure-white;
-
-				summary {
-					list-style: none;
-					margin: 0;
-					background: url( $theme_path + '/images/svg/details/minus-circle-#{$number}-min.svg' ) no-repeat left top;
-					padding-left: 2.5rem;
-					color: $color;
-
-					&::-webkit-details-marker {
-						display:none;
-					}
-
-					&::marker {
-						display:none;
-					}
-				}
-			}
-
-			summary {
-				list-style: none;
-				margin: 0;
-				font-size: 1.2rem;
-				font-weight: 600;
-				cursor: pointer;
-				background: url( $theme_path + '/images/svg/details/plus-circle-#{$number}-min.svg' ) no-repeat left top;
-				padding-left: 2.5rem;
-
-				&::-webkit-details-marker {
-					display:none;
-				}
-
-				&::marker {
-					display:none;
-				}
-			}
-
-			p {
-				margin-left: 2.5rem;
-
-				&:last-of-type {
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
+@mixin boton() {
+	border-radius: 40px;
+	border: none;
+	background-color: $color_fondo_lila;
+	text-transform: uppercase;
 }
 
 // Based on https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
