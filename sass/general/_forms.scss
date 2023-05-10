@@ -54,9 +54,9 @@
 .contact-form {
 	button {
 		@include boton();
-	}
 
-	&:hover {
-		text-decoration: underline;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
