@@ -1,6 +1,8 @@
 body{
 	font-family: "Open Sans", sans-serif;
 
-	--wp--style--global--content-size: 1000px;
-	--wp--style--global--wide-size: 1200px;
+	.wp-site-blocks {
+		--wp--style--global--content-size: 1000px;
+		--wp--style--global--wide-size: 1200px;
+	}
 }

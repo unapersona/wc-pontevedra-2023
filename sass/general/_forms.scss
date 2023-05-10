@@ -17,8 +17,21 @@
 				font-weight: bold;
 			}
 
-			th {
+			th,
+			td {
 				border: 1px solid $color_gris_casi_blanco;
+				text-align: center;
+			}
+
+			.tix-column-price,
+			.tix-column-remaining {
+				font-weight: bold;
+			}
+
+			.tix-column-quantity {
+				input {
+					padding: 14px 7px;
+				}
 			}
 		}
 	}
