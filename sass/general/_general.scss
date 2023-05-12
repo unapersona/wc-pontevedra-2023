@@ -1,3 +1,10 @@
 body{
 	font-family: "Open Sans", sans-serif;
+
+	.is-layout-constrained{
+		& > :where(:not(.alignleft):not(.alignright):not(.alignfull)){
+			max-width: 1000px;
+		}
+	}
+
 }
