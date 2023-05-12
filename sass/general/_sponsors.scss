@@ -1,0 +1,25 @@
+
+.wordcamp-sponsors {
+	padding: 0 30px;
+}
+
+.wordcamp-sponsor {
+
+	margin-bottom: 5rem;
+
+	.wordcamp-sponsors__logo {
+		margin: 1rem auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&:after {
+		content: '';
+		border-bottom: solid 1px $color_azul;
+		display: block;
+		width: 50%;
+		margin: 2rem auto 0;
+	}
+
+}
