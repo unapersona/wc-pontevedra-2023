@@ -19,6 +19,7 @@
 
 		#session-speaker-names {
 			padding-left: 0;
+			margin-bottom: 3em;
 
 			a {
 				background-color: $color_azul;
@@ -35,5 +36,17 @@
 	/*** Hack ***/
 	.wp-container-13 {
 		display: none;
+	}
+
+	.speaker-feedback {
+		label {
+			display: block;
+			margin-bottom: 1em;
+		}
+
+		textarea {
+			width: 100%;
+			min-height: 8em;
+		}
 	}
 }
