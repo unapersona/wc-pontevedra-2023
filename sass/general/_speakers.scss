@@ -26,11 +26,22 @@
 		}
 
 		#speaker-session-names {
-			padding-left: 10px;
+			padding-left: 0;
 
 			a {
-				color: $color_fondo_lila;
+				background-color: $color_azul;
+				padding: 5px 20px;
+				color: $color_gris_casi_blanco;
+
+				&:hover {
+					background-color: $color_fondo_lila;
+				}
 			}
 		}
+	}
+
+	/*** Hack ***/
+	.wp-container-13 {
+		display: none;
 	}
 }
