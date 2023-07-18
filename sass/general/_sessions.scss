@@ -48,5 +48,18 @@
 			width: 100%;
 			min-height: 8em;
 		}
+
+		input[type="submit"] {
+			background-color: $color_azul;
+			padding: 5px 20px;
+			color: $color_gris_casi_blanco;
+			border-radius: 25px;
+			margin-top: 1em;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $color_fondo_lila;
+			}
+		}
 	}
 }
