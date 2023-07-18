@@ -8,12 +8,13 @@
 	}
 
 	.wordcamp-schedule__column-header {
-		background-color: $color_fondo_lila !important;
+		background-color: $color_azul !important;
 		color: $color_gris_casi_blanco;
 	}
 
 	.wordcamp-schedule__time-slot-header {
-		background-color: $color_azul !important;
+		background-color: $color_fondo_lila !important;
+
 		color: $color_gris_casi_blanco;
 	}
 
@@ -29,6 +30,7 @@
 
 	.wordcamp-schedule__session-speakers {
 		&:before {
+			color: $color_dark_01;
 			content: 'Por ';
 		}
 
