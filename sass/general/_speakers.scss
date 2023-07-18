@@ -20,11 +20,14 @@
 
 		.speaker-sessions {
 			margin-top: 1em;
+			margin-bottom: 1em;
 			font-size: 30px;
 			font-weight: bold;
 		}
 
-		.speaker-session-names {
+		#speaker-session-names {
+			padding-left: 10px;
+
 			a {
 				color: $color_fondo_lila;
 			}
