@@ -1,0 +1,20 @@
+.single-wcb_speaker {
+	.speaker-avatar {
+		img {
+			width: 130px;
+			height: auto;
+			border-radius: 150px;
+			border: 2px solid $color_fondo_lila;
+		}
+	}
+
+	.entry-content {
+		h1 {
+			color: $color_fondo_lila;
+		}
+
+		p {
+			margin-top: 1em;
+		}
+	}
+}
