@@ -8,13 +8,26 @@
 		}
 	}
 
-	.entry-content {
-		h1 {
-			color: $color_fondo_lila;
-		}
+	h1 {
+		font-size: 40px;
+		color: $color_fondo_lila;
+	}
 
+	.entry-content {
 		p {
 			margin-top: 1em;
+		}
+
+		.speaker-sessions {
+			margin-top: 1em;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.speaker-session-names {
+			a {
+				color: $color_fondo_lila;
+			}
 		}
 	}
 }
