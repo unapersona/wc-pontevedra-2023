@@ -1,0 +1,39 @@
+.single-wcb_session {
+
+	h1 {
+		font-size: 40px;
+		color: $color_fondo_lila;
+	}
+
+	.entry-content {
+		p {
+			margin-top: 1em;
+		}
+
+		.session-speakers {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		#session-speaker-names {
+			padding-left: 0;
+
+			a {
+				background-color: $color_azul;
+				padding: 5px 20px;
+				color: $color_gris_casi_blanco;
+
+				&:hover {
+					background-color: $color_fondo_lila;
+				}
+			}
+		}
+	}
+
+	/*** Hack ***/
+	.wp-container-13 {
+		display: none;
+	}
+}
