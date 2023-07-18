@@ -1,17 +1,19 @@
 .wordcamp-schedule {
 	.wordcamp-schedule__date {
 		font-size: 40px;
+		font-weight: bold;
 		color: $color_fondo_lila;
+		margin-top: 2em;
 		margin-bottom: 1em;
 	}
 
 	.wordcamp-schedule__column-header {
-		background-color: $color_fondo_lila;
+		background-color: $color_fondo_lila !important;
 		color: $color_gris_casi_blanco;
 	}
 
 	.wordcamp-schedule__time-slot-header {
-		background-color: $color_azul;
+		background-color: $color_azul !important;
 		color: $color_gris_casi_blanco;
 	}
 
@@ -19,6 +21,10 @@
 		font-weight: bold;
 		color: $color_fondo_lila;
 		margin-bottom: 1em;
+
+		a {
+			color: $color_fondo_lila;
+		}
 	}
 
 	.wordcamp-schedule__session-speakers {
@@ -28,6 +34,10 @@
 
 		color: $color_azul;
 		margin-top: 1em;
+
+		a {
+			color: $color_azul;
+		}
 	}
 
 }
