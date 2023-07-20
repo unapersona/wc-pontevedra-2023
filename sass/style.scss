@@ -1,13 +1,13 @@
 @import 'general/inc/vars';
 @import 'general/inc/mixins';
 
-@import 'general/normalize';
+//@import 'general/normalize';
 
 /* @import 'general/fonts'; */
 
-//@import 'general/general';
+@import 'general/general';
 
-//@import 'general/hero';
+@import 'general/hero';
 
 @import 'general/home';
 
@@ -15,7 +15,7 @@
 
 @import 'general/menu';
 
-//@import 'general/forms';
+@import 'general/forms';
 
 /* @import 'general/slider'; */
 
