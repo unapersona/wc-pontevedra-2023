@@ -1,14 +1,23 @@
 #tix-attendees {
 	.tix-attendee-list {
+		@include for-mobile-big {
+			columns: 2;
+		}
+
+		@include for-mobile-mini {
+			columns: 1;
+		}
+
 		columns: 3;
 		column-gap: 1em;
 
 		li {
 			display: flex;
+			align-items: center;
 			width: initial;
 			float: initial;
-			margin-bottom: initial;
 			height: initial;
+			margin-bottom: 50px;
 
 			.avatar {
 				width: 90px;
@@ -16,6 +25,12 @@
 				border-radius: 100%;
 				margin-right: 1rem;
 				border: 2px solid $color_fondo_lila;
+			}
+
+			.tix-attendee-name {
+				margin-left: 0;
+				font-size: 16px;
+				font-weight: 600;
 			}
 		}
 
