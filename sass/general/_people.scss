@@ -1,15 +1,16 @@
 #tix-attendees {
 	.tix-attendee-list {
 		@include for-mobile-big {
-			columns: 2;
+			grid-template-columns: auto auto;
 		}
 
 		@include for-mobile-mini {
-			columns: 1;
+			grid-template-columns: auto;
 		}
 
-		columns: 3;
-		column-gap: 1em;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 1rem;
 		padding-left: 5px;
 
 		li {
