@@ -1,5 +1,5 @@
 .voluntarios {
-	.voluntarios {
+	.voluntario {
 		margin-bottom: 60px;
 
 		.wp-block-image img {
@@ -11,5 +11,12 @@
 				margin: 0;
 			}
 		}
+
+		@include for-tablet-portrait-up{
+			.wp-block-social-links {
+				justify-content: space-evenly;
+			}
+		}
+
 	}
 }
