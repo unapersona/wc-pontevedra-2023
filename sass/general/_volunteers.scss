@@ -1,6 +1,6 @@
 .voluntarios {
 	.voluntario {
-		margin-bottom: 60px;
+		margin-bottom: 6rem;
 
 		.wp-block-image img {
 			max-width: 300px;
@@ -12,11 +12,12 @@
 			}
 		}
 
-		@include for-tablet-portrait-up{
-			.wp-block-social-links {
-				justify-content: space-evenly;
+		.wp-block-social-links {
+			justify-content: space-evenly;
+
+			@include for-tablet-portrait-up {
+				justify-content: flex-end;
 			}
 		}
-
 	}
 }
