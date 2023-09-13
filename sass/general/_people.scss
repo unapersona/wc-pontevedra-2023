@@ -34,6 +34,18 @@
 				font-size: 16px;
 				font-weight: 600;
 			}
+
+			.tix-cual-es-tu-usuario-de-twitter-es-por-si-quieres-que-aparezca-en-la-acreditacion-el-nuestro-es-pontewordcamp::before {
+				content: '';
+				display: inline-block;
+				font-size: 1rem;
+				margin-right: .3rem;
+				width: 20px;
+				height: 20px;
+				background-image: url('https://pontevedra.wordcamp.org/2023/files/2023/09/x.png');
+				background-size: contain;
+				vertical-align: middle;
+			}
 		}
 
 
